@@ -41,12 +41,12 @@ for idx, company in enumerate(empresas):
     if idx < len(telefones):
         telefone = telefones[idx].text.strip()
     else:
-        telefone = "Telefone não disponível"
+        TELEFONE = "Telefone não disponível"
 
     companies.append({
         'Nome': nome,
-        'Endereço': endereco,
-        'Telefone': telefone
+        'Telefone': telefone,
+        'Endereço': endereco     
     })
 
 # Fecha o navegador
